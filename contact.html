@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <h1>Please Fill the Form Below to Contact Me</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>Basic Information</b></legend>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" autofocus placeholder="Enter Your Full Name" required><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Your EmailId"><br>
+        <label for="age">Age</label>
+        <input type="number" name="Age" id="age" min="18" max="85"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="myphone" id="phone"><br>
+        <label for="reason">Reason for Contact</label>
+        <select>
+            <optgroup label="Business">
+                <option>Job-Related</option>
+                <option>Freelancer Projects</option>
+                <option>Business Oppurtunity</option>
+            </optgroup>
+            <optgroup label="Personal">
+                <option value="Friendly Hello">Friendly Hello</option>
+                <option value="Iam an old Friend">Iam an old Friend</option>
+            </optgroup>
+        </select><br>
+       
+        <label for="browser">Choose Your Fav Browser From The List:</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Google Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Brave"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend><b>Other Information</b></legend>
+        <h4>What is Your Fav Technology</h4>
+        <input type="radio" name="fav-technology" value="html">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="fav-technology" value="css">
+        <label for="css">CSS</label><br>
+        <input type="radio" name="fav-technology" value="js">
+        <label for="js">Javascript</label>
+   
+        <br>
+        <h4>What Technologies are you Intrested in Learning ?</h4>
+        <input type="checkbox" name="technology1" value="react">
+        <label for="technology1">React-JS</label><br>
+        <input type="checkbox" name="technology2" value="node">
+        <label for="technology2">Node-JS</label><br>
+        <input type="checkbox" name="technology3" value="css">
+        <label for="technology3">CSS</label><br><br>
+        <label for="message">Your Message</label><br>
+        <textarea name="message"  cols="60" rows="10"></textarea><br>
+
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+
+    </form>
+
+    <br>
+    <a href="/index.html">Go To Main Page</a>
+
+</body>
+
+</html>
